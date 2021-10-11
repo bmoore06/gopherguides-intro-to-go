@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 //array
-  
 //empty act variable, I was very confused as to what this actually is.
   
 //Test File Naming
