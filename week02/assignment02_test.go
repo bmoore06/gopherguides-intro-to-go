@@ -8,7 +8,7 @@ import (
 func Test_Array(t *testing.T) {
 	t.Parallel()
 
-	exp := [4]string{"John", "Paul", "George", "Ringo"}
+	exp := [4]string{"Benjamin", "Samantha", "Becca", "Ollie"}
 	var act [4]string
 
 	for i, x := range exp {
@@ -26,7 +26,7 @@ func Test_Array(t *testing.T) {
 func Test_Slice(t *testing.T) {
 	t.Parallel()
 
-	exp := []string{"John", "Paul", "George", "Ringo"}
+	exp := []string{"Benjamin", "Samantha", "Becca", "Ollie"}
 	act := make([]string, 0, len(exp))
 
 	for _, x := range exp {
@@ -49,10 +49,10 @@ func Test_Map(t *testing.T) {
 	t.Parallel()
 
 	exp := map[string]string{
-		"John":   "Lennon",
-		"Paul":   "McCartney",
-		"George": "Harrison",
-		"Ringo":  "Starr",
+		"Benjamin":   "Moore",
+		"Samantha":   "Moore",
+		"Becca": "Richards",
+		"Ollie":  "Moore",
 	}
 
 	act := map[string]string{}
