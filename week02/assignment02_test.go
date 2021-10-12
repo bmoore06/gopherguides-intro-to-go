@@ -1,5 +1,4 @@
 package assignment02
-
 import (
 	"log"
 	"testing"
