@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_Array(t *testing.T) {
+func Test_Array(t *testing.T) { // Always use this line to start a test file
 	t.Parallel()
 
 	exp := [4]string{"Benjamin", "Samantha", "Becca", "Ollie"}
@@ -23,7 +23,7 @@ func Test_Array(t *testing.T) {
 	}
 }
 
-func Test_Slice(t *testing.T) {
+func Test_Slice(t *testing.T) { // Always use this line for a test file
 	t.Parallel()
 
 	exp := []string{"Benjamin", "Samantha", "Becca", "Ollie"}
@@ -45,7 +45,7 @@ func Test_Slice(t *testing.T) {
 	}
 }
 
-func Test_Map(t *testing.T) {
+func Test_Map(t *testing.T) { // Always use this line for a test file
 	t.Parallel()
 
 	exp := map[string]string{
@@ -68,7 +68,7 @@ func Test_Map(t *testing.T) {
 	for k, a := range act {
 		x, ok := exp[k]
 		if !ok {
-			log.Fatalf("could not find %s", k)
+			log.Fatalf("could not find %s", k) // These two lines are VERY useful to double check everything is correct in your code.
 		}
 
 		if a != x {
