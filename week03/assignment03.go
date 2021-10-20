@@ -1,4 +1,5 @@
 package main
+
 import "fmt"
 
 type Movie struct {  
@@ -67,4 +68,7 @@ func (c Theatre) Critique(movies []*Movie, fn CritiqueFn) error { //* will be us
   }  
   return nil 
 }
+
+
+
 
