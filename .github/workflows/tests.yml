@@ -1,6 +1,6 @@
 name: Tests
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -23,8 +23,3 @@ jobs:
 
       - name: Test
         run: go test -tags integration -v -race -cover ./...
-        
-        
-        
-        
-        
